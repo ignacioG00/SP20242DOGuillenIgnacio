@@ -304,7 +304,7 @@ async function CrearVehiculo()
                     let nuevoVehiculo;
                     if (tipo == "auto" && modelo != null && modelo != "" && anoFabricacion > 1985 && velMax > 0 && atributo4 > 2 && atributo5 > 2)
                     {
-                        nuevoVehiculo = new Auto(resultado.idm, modelo, anoFabricacion, velMax, atributo4, atributo5);
+                        nuevoVehiculo = new Auto(resultado.id, modelo, anoFabricacion, velMax, atributo4, atributo5);
                         listaDeVehiculos.push(nuevoVehiculo);
                         alert("El Auto con id " + resultado.id + " fue ingresada con exito");
                     }
